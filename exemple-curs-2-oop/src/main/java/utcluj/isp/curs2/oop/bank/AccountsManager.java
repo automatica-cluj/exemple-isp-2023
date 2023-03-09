@@ -21,7 +21,7 @@ public class AccountsManager {
 
     public void removeAccount(BankAccount account) {
         for (int i = 0; i < numAccounts; i++) {
-            if (accounts[i] == account) {
+            if (accounts[i].equals(account)) {
                 for (int j = i; j < numAccounts - 1; j++) {
                     accounts[j] = accounts[j+1];
                 }
@@ -58,7 +58,10 @@ public class AccountsManager {
         manager.addAccount(account1);
         manager.addAccount(account2);
         manager.removeAccount(account2);
-        BankAccount account3 = manager.findAccount("12345");
-        System.out.println(account3.getAccountNumber() + " " + account3.getAccountHolderName() + " " + account3.getBalance());
+        BankAccount account3 = manager.findAccount("12345666");
+        if(account3!=null)
+            System.out.println(account3.getAccountNumber() + " " + account3.getAccountHolderName() + " " + account3.getBalance());
+        else
+            System.out.println("Account not found!");
     }
 }

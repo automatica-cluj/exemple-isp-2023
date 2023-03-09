@@ -4,6 +4,8 @@
  */
 package utcluj.isp.curs2.oop.bank;
 
+import java.util.Objects;
+
 public class BankAccount {
     
     // instance variables
@@ -52,4 +54,34 @@ public class BankAccount {
             + "Account holder name: " + accountHolderName + "\n"
             + "Balance: $" + balance + "\n";
     }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" + "accountNumber=" + accountNumber + ", accountHolderName=" + accountHolderName + ", balance=" + balance + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final BankAccount other = (BankAccount) obj;
+        return Objects.equals(this.accountNumber, other.accountNumber);
+    }
+    
+    
+    
+    
 }

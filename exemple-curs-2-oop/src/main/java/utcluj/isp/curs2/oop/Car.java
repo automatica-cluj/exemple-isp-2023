@@ -15,10 +15,7 @@ public class Car {
     private double price;
     
     public Car() {
-        this.make = "Unknown";
-        this.model = "Unknown";
-        this.year = 0;
-        this.price = 0.0;
+        this("Dacia", "Spring");
     }
     
     public Car(String make, String model, int year, double price) {

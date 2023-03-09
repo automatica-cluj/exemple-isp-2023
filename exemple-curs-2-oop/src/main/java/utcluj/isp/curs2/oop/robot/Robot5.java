@@ -59,5 +59,19 @@ public class Robot5 {
 
         System.out.println("robot1 == robot2: " + robot1.equals(robot2));
         System.out.println("robot1 == robot3: " + robot1.equals(robot3));
+        
+        
+        if(robot1.equals(robot3))
+            System.out.println("OK");
+        else
+            System.out.println("NOK");
+    
+        String s1="Un sir de caractere";
+        String s2= new String("Un sir de caractere");
+        
+        System.out.println(s1.equals(s2));
+        System.out.println(robot1.equals(robot3));
+        
+        
     }
 }

@@ -25,6 +25,12 @@ public class Robot2 {
         Robot2 robot2 = new Robot2(5678, 0);
         robot2.move(10);
 
-
+        System.out.println(robot);
+        System.out.println(robot2);
+        
+        Robot2 r3=robot;
+        r3.move(22);
+        
+        robot2 = robot;
     }
 }

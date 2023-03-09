@@ -29,14 +29,14 @@ public class GarbageCollectorDemo {
     public static void main(String[] args) {
         System.out.println("Creating new objects...");
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 500000000; i++) {
             new GarbageCollectorDemo();
             System.out.println("Created " + objectCount + " objects.");
         }
 
         System.out.println("Setting objects to null...");
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 500000000; i++) {
             GarbageCollectorDemo object = new GarbageCollectorDemo();
             System.out.println("Created " + objectCount + " objects.");
             object = null;

@@ -52,9 +52,10 @@ public class Person {
 
     public static void main(String[] args) {
         Person person = new Person("John Doe", 30, "123 Main Street");
-        person.printInfo();
-        person.setAge(31);
-        person.setAddress("456 High Street");
-        person.printInfo();
+        System.out.println(person);
+//        person.printInfo();
+//        person.setAge(31);
+//        person.setAddress("456 High Street");
+//        person.printInfo();
     }
 }
