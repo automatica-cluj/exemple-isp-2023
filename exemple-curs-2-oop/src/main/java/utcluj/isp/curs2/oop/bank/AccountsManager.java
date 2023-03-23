@@ -1,7 +1,7 @@
 package utcluj.isp.curs2.oop.bank;
 
 public class AccountsManager {
-
+    
     private BankAccount[] accounts;
     private int numAccounts;
 

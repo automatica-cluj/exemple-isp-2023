@@ -22,11 +22,16 @@ public class Robot2 {
         Robot2 robot = new Robot2(1234, 0);
         robot.move(10);
         robot.move(-5);
+        
         Robot2 robot2 = new Robot2(5678, 0);
         robot2.move(10);
 
         System.out.println(robot);
         System.out.println(robot2);
+        
+        Robot2 robot3=null;
+        System.out.println(robot3);
+        
         
         Robot2 r3=robot;
         r3.move(22);

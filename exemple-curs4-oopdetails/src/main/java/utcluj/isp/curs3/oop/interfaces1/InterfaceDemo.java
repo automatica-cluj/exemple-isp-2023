@@ -55,7 +55,13 @@ class Hawk implements Animal, Bird {
     }
 }
 
+
+
 public class InterfaceDemo {
+
+    static void tryFly(Bird b){
+        b.fly();
+    }
     public static void main(String[] args) {
         Dog dog = new Dog();
         dog.eat();
@@ -65,6 +71,13 @@ public class InterfaceDemo {
         penguin.eat();
         penguin.sleep();
         penguin.fly();
+
+        Animal a1 = new Penguin();
+        a1.eat();
+        ((Bird)a1).fly();
+        Bird b1 = (Bird)a1;
+        Penguin p1 = (Penguin)a1;
+        tryFly((Bird)a1);
 
         Hawk hawk = new Hawk();
         hawk.eat();

@@ -11,6 +11,10 @@ class Circle extends Shape {
     public void draw() {
         System.out.println("Drawing a circle...");
     }
+
+    public void draw(int x, int y) {
+        System.out.println("Drawing a circle at (" + x + ", " + y + ")...");
+    }
 }
 
 class Rectangle extends Shape {
@@ -30,7 +34,6 @@ public class PolymorphismDemo {
         
         for (Shape shape : shapes) {
             shape.draw();
-            shape.
         }
     }
 }

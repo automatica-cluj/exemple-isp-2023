@@ -41,16 +41,27 @@ public class Robot5 {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash;
+    }
+
+    @Override
     public boolean equals(Object obj) {
-        if (obj == this) {
+        if (this == obj) {
             return true;
         }
-        if (!(obj instanceof Robot5)) {
+        if (obj == null) {
             return false;
         }
-        Robot5 otherRobot = (Robot5) obj;
-        return name == otherRobot.getName() && position == otherRobot.getPosition();
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Robot5 other = (Robot5) obj;
+        return this.name == other.name;
     }
+
+   
 
     public static void main(String[] args) {
         Robot5 robot1 = new Robot5(1234, 0);
