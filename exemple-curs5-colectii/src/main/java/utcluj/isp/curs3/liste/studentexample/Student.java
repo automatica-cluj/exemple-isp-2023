@@ -1,6 +1,7 @@
-package utcluj.isp.curs3.liste.maps;
+package utcluj.isp.curs3.liste.studentexample;
 
 import java.util.HashMap;
+import java.util.Objects;
 
 public class Student {
     private String name;
@@ -37,5 +38,18 @@ public class Student {
 
     public void setDepartment(String department) {
         this.department = department;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return name.equals(student.name) && department.equals(student.department);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, department);
     }
 }

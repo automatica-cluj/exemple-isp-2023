@@ -1,5 +1,7 @@
 package utcluj.isp.curs3.liste.hashset;
 
+import java.util.Objects;
+
 public class Account  {
 
     // Instance variables
@@ -29,6 +31,20 @@ public class Account  {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return Objects.equals(accountNumber, account.accountNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountNumber);
     }
 
     // toString method to display the Account object as a string
