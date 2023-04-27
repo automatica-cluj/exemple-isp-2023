@@ -7,7 +7,6 @@ package automatica.isp.demo.air;
 
 import automatica.isp.demo.air.model.Airway;
 import automatica.isp.demo.air.view.AirwaysMainUI;
-import automatica.ssatr.demo.air.model.*;
 import automatica.isp.demo.air.service.AirwaysManager;
 import automatica.isp.demo.air.service.SerializableUtil;
 

@@ -5,7 +5,6 @@
 package automatica.isp.demo.air.service;
 
 import automatica.isp.demo.air.model.Airway;
-import automatica.ssatr.demo.air.model.*;
 import javax.swing.table.AbstractTableModel;
 import java.io.IOException;
 import java.util.ArrayList;

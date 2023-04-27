@@ -6,7 +6,6 @@ package automatica.isp.demo.air.view;
 
 import automatica.isp.demo.air.model.Airway;
 import automatica.isp.demo.air.model.Waypoint;
-import automatica.ssatr.demo.air.model.*;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.table.AbstractTableModel;

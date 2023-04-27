@@ -7,8 +7,6 @@ package automatica.isp.demo.air;
 import automatica.isp.demo.air.model.Airway;
 import automatica.isp.demo.air.model.Waypoint;
 import automatica.isp.demo.air.service.AirwaysManager;
-import automatica.ssatr.demo.air.model.*;
-import automatica.ssatr.demo.air.service.*;
 import java.util.ArrayList;
 
 /**

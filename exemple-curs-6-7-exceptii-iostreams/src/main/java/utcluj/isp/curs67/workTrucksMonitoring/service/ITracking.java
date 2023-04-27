@@ -17,7 +17,7 @@ public interface ITracking {
 
     void addNewTruckRecord(double latitude, double longitude, String plateNumber);
 
-    List<Truck> getALlRecordsByTruck(String plateNumber) throws TruckNotFound;
+    List<Truck> getALlRecordsByTruck(String plateNumber) throws TruckNotFoundException;
 
     List<Truck> getAllTruckRecords();
 

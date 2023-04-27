@@ -40,12 +40,12 @@ public class TrackingVehicleService implements ITracking {
     }
 
     @Override
-    public List<Truck> getALlRecordsByTruck(String plateNumber) throws TruckNotFound {
+    public List<Truck> getALlRecordsByTruck(String plateNumber) throws TruckNotFoundException {
         List<Truck> list = trucksRepository.readAll().stream().filter(t -> t.getPlateNumber().equals(plateNumber)).collect(toList());
         if(list.size()>0)
             return list;
         else
-            throw new TruckNotFound("No records found for plate number: " + plateNumber);
+            throw new TruckNotFoundException("No records found for plate number: " + plateNumber);
     }
 
 }

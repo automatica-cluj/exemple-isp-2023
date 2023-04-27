@@ -5,7 +5,6 @@
 package automatica.isp.demo.air.service;
 
 import automatica.isp.demo.air.model.Airway;
-import automatica.ssatr.demo.air.model.*;
 import java.io.*;
 import java.util.ArrayList;
 /**
