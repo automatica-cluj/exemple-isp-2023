@@ -31,21 +31,21 @@ public class Main {
         r3.start();
        
         
-        
-       t1.stopActivity();
-       t2.stopActivity();
-       t3.stopActivity();
-       
-       t1.join();
-       t2.join();
-       t3.join();
-       r1.join();
-       r2.join();
-       r3.join();
-       
+//        
+//       t1.stopActivity();
+//       t2.stopActivity();
+//       t3.stopActivity();
+//       
+//       t1.join();
+//       t2.join();
+//       t3.join();
+//       r1.join();
+//       r2.join();
+//       r3.join();
+//       
         System.out.println("FINISH WORK!");
-        
-        // threaduri care NU sunt daemon 
+//        
+//        // threaduri care NU sunt daemon 
         //daemon thread 
     }
 }

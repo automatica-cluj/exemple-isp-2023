@@ -26,7 +26,7 @@ class FirGet extends Thread {
     public void run(){
         int i=0;
         int a,b;
-        while(++i<1500){         
+        while(++i<150000){         
             synchronized(p){ //blocare firului apelat daca lockul obiectului p este deja detinut de alt fir 
                 a= p.getX();          
                 try {
@@ -49,13 +49,13 @@ class FirSet extends Thread {
     } 
     public void run(){
         int i =0;
-        while(++i<1500){
+        while(++i<150000){
             int a = (int)Math.round(10*Math.random()+10);
             int b = (int)Math.round(10*Math.random()+10);
  
             synchronized(p){ ///////
                 p.setXY(a,b);
-            }
+            
                 
                 try {
                     sleep(10);
@@ -63,7 +63,7 @@ class FirSet extends Thread {
 
                     e.printStackTrace();
                 
-                
+              }  
             }
                 System.out.println("Am scris: ["+a+","+b+"]");
         }
